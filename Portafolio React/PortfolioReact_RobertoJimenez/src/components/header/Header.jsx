@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import scroll from './scroll'
-import CV from '../../assets/cv.pdf'
+import CV from '../../assets/cvRobJim.pdf'
 
 const Header = () => {
   return (

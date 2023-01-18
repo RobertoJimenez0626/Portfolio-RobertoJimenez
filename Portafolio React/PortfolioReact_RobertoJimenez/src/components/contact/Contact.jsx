@@ -12,7 +12,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_vl5ns6g', 'template_fu0thcr', form.current, 'y_A209zwhnR7nkLvu')
+    emailjs.sendForm('service_vl5ns6g', 'template_lzj9f1p', form.current, 'y_A209zwhnR7nkLvu')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -33,19 +33,19 @@ const Contact = () => {
             <MdOutlineMarkEmailUnread className='contact__option-icon' />
             <h4>Email</h4>
             <h5>robert2000@live.com.mx</h5>
-            <a href="mailto:robert2000@live.com.mx" target="_blank">Envia un correo</a>
+            <a href="mailto:robert2000@live.com.mx" target="_blank" rel="noreferrer">Envia un correo</a>
           </article>
           <article className="contact__option">
             <RiMessengerLine className='contact__option-icon' />
             <h4>Messenger</h4>
             <h5>Roberto Jimenez</h5>
-            <a href="https://m.me/robertocarlos.jimenezgarcia.1" target="_blank">Envia un mensaje</a>
+            <a href="https://m.me/robertocarlos.jimenezgarcia.1" target="_blank" rel="noreferrer">Envia un mensaje</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon' />
             <h4>WhatsApp</h4>
             <h5>+52 9811772160</h5>
-            <a href="https://api.whatsapp.com/send?phone=529811772160" target="_blank">Envia un mensaje</a>
+            <a href="https://api.whatsapp.com/send?phone=529811772160" target="_blank" rel="noreferrer">Envia un mensaje</a>
           </article>
         </div>
 

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Nunito";
+    src: url(./Fonts/Nunito-VariableFont_wght.ttf);
+    font-family: "Pacifico";
+    src: url(./Fonts/Pacifico-Regular.ttf);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  img {
+    width: 100%;
+  }
+  .section {
+    @apply container mx-auto pt-[8rem] lg:px-8 px-4
+  }
+  .btn {
+    @apply rounded-t-[1rem] rounded-bl-[1rem] opacity-70 bg-pink-400 p-4 flex items-center gap-4 text-white text-[0.85rem] hover:opacity-100 transition
+  }
+}
